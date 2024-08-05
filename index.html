@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea Shop</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto;
+            height: 100vh;
+        }
+
+        .header {
+            display: inline-flex;
+            background-color: rgb(17, 212, 92);
+            color: white;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .header img{
+            width:50px;
+            height:50px;
+            margin-top:6px;
+            margin-right:10px;
+        }
+
+        .nav {
+            background-color:rgb(5, 99, 41);
+            padding: 1rem;
+        }
+
+        .nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: 2fr minmax(150px,1fr);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        .featured-teas {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem
+        }
+
+        .tea img {
+            width: 100%;
+        }
+
+        .about-shop {
+            background-color: #f4f4f4;
+            padding: 1rem;
+        }
+
+        .footer {
+            background-color: rgb(17, 212, 92);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="images/logo.png">
+            <h1>Mukilan Tea House</h1>
+        </header>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="featured-teas">
+                
+                <div class="tea">
+                    <img src="images/blacktea.jpeg" alt="Tea 2">
+                    <p>Black Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/greentea.jpeg" alt="Tea 3">
+                    <p>Green Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/herbaltea.jpeg" alt="Tea 1">
+                    <p>Herbal Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/gingertea.jpeg" alt="Tea 2">
+                    <p>Ginger Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/lemontea.jpeg" alt="Tea 3">
+                    <p>Lemon Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/honeytea.jpeg" alt="Tea 1">
+                    <p>Honey Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/masala tea.jpeg" alt="Tea 2">
+                    <p>Masala Tea</p>
+                </div>
+                <div class="tea">
+                    <img src="images/whitetea.jpeg" alt="Tea 3">
+                    <p>White Tea</p>
+                </div>
+            </section>
+            <section class="about-shop">
+                <h2>About Our Tea Shop</h2>
+                <p>Welcome to The Leaf & Brew, a cozy tea sanctuary where tradition meets modern creativity. Nestled in the heart of the city, our shop offers a curated selection of exquisite teas from around the world, inviting you to embark on a sensory journey. With a warm and inviting atmosphere featuring rustic wooden furnishings, soft lighting, and lush greenery, The Leaf & Brew is the perfect escape from the hustle and bustle of daily life.
+
+                    Our menu boasts signature blends like Jasmine Blossom Delight, Chai Spice Fusion, and Matcha Zen, alongside seasonal specials and herbal infusions that cater to every palate. Complement your tea experience with freshly baked scones, tea-infused pastries, and artisanal sandwiches. Our eco-friendly packaging and minimalist design reflect our commitment to simplicity and elegance. Through engaging social media content, community events, and a loyalty program, we aim to foster a vibrant community of tea lovers. Whether you're a seasoned tea enthusiast or a curious newcomer, The Leaf & Brew promises a memorable experience that soothes your senses and warms your soul..</p>
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Contact us at: mukilan@teashop.com</p>
+            <p>Follow us on our social media</p>
+        </footer>
+
+    </div>
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+           event.preventDefault();
+       });
+       document.addEventListener('keydown', function(event) {
+           if (event.ctrlKey && (event.key === 'u' || event.key === 'U') || event.key === 'F12') {
+               event.preventDefault();
+           }
+       });
+   </script>
+</body>
+</html>
